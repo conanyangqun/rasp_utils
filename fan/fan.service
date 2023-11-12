@@ -1,0 +1,8 @@
+[Unit]
+Description=Auto FAN
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/pi/bin/fan.py
+ExecReload=/usr/bin/python3 /home/pi/bin/fan.py
+[Install]
+WantedBy=multi-user.target
